@@ -1,0 +1,87 @@
+.thumbnail{
+    width: 100%;
+     /*Can set & object will keep its dimensions*/
+    
+     /*
+    height: 300px; /*Sets objects dimensions so image will distort 
+    object-fit: contain; /*contains image into the set dimensions so pic can show full dimensions 
+    object-position: center; /*aligns image by left/right/center/top/bottom 
+    */
+}
+    /*Makes widith of paragraph 300px but does not take away BLOCK ELEMENT(p)*/
+    /*INLINE BLOCK ELEMENTS only take as much room as they need to(image)
+    INLINE ELEMENTS appear within a line of text(STRONG)*/
+.PFP{
+    width: 50px;
+    margin-right: 0px;
+    vertical-align: top; 
+}
+.pfp{
+    width: 36px;
+    border-radius: 18px;
+}
+.vidText{
+    width: 200px;
+}
+.title{
+    color: black;
+    font-size: 13.75px;
+    font-weight: 500;
+    margin-top: 0px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.thumbnailR{
+    margin-bottom: 9px;
+    position: relative; /*Cannot put in an img element because it is not a container*/
+}
+.author,.stats{
+    font-size: 12px;
+    color: rbg(96,96,96)
+}
+.author{
+    margin-bottom: 4px;
+}
+
+.vidInfo{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+}
+.vidContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+    padding: 20px;
+}
+.vidPreview{
+    padding: 4px;
+}
+.time{
+    position: absolute;
+    right: 4px;
+    bottom: 11.5px;
+    background-color: black;
+    color: white;
+    font-family: Roboto,Arial;
+    font-size:12px; font-weight: 500;
+    padding: 4px; border-radius: 2px;
+    padding-top: 3px;
+}
+
+/*This is a media query and the media only responds based on the size of the users screen*/
+@media (max-width: 700px){
+    .vidContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 1000px){
+    .vidContainer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 999px) and (min-width:751px){
+    .vidContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

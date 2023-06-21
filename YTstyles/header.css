@@ -1,0 +1,148 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 57px; margin-bottom: 20px;
+    background-color: white;
+    position: fixed;
+    top: 0px; left: 0px; right: 0px;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+    border-bottom-style:solid ;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
+}
+.leftH{
+    display: flex;
+    align-items: center;
+}
+.centerH{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 470px; /*When resizing browser it shrinks but as it widens it can only reach 300px */
+    margin-left: 60px;
+}
+.rightH{
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 24px;
+    margin-left: 29px;
+    align-items: center;
+    width: 182px;
+    margin-left: 29px;
+    margin-right: 24px;
+    justify-content: space-between;
+}
+.YTlogo{
+    height: 20px;
+    cursor: pointer;
+}
+.menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.search-button{
+    height: 40.25px;
+    width: 64px;
+    border-color: rgb(204, 204, 204);
+    background-color: rgb(247, 247, 247);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    margin-left: -1px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.search-button,.voice-button,
+.uploadContainer,.YTContainer,
+.notifContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button .tooltip,
+.voice-button .tooltip,
+.uploadContainer .tooltip,
+.YTContainer .tooltip,
+.notifContainer .tooltip{
+    position: absolute;
+    color: white;
+    background-color: gray;
+    padding-top: 4px; padding-bottom: 4px;
+    padding-left: 8px; padding-right: 8px;
+    border-radius: 2px; font-size: 12px;
+    bottom: -30px; opacity: 0; font-family: Roboto,Arial;
+    transition: opacity .15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.uploadContainer:hover .tooltip,
+.YTContainer:hover .tooltip,
+.notifContainer:hover .tooltip{
+    opacity: 1;
+}
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+.voice-img{
+    vertical-align: middle;
+    height: 24px;
+}
+.search-bar{
+    background-color: white;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color:  rgb(204, 204, 204);
+    height: 37px;
+    font-size: 16px;
+    flex: 1;
+    box-shadow: inset 1px 2px 2px rgba(0, 0, 0, .05);
+    width: 0;
+    padding-left: 12px;
+}
+.search-bar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+.search-img{
+    height: 24px;
+    vertical-align: middle;
+}
+.upload,.youtube-apps,.notifications{
+    height:24px;
+    cursor: pointer;
+}
+.notifContainer{
+    position: relative;
+    cursor: pointer;
+}
+.notifications-count{
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: -2px;
+    right: -5px;
+    font-size: 11px; font-family: Roboto,Arial;
+    padding: 4px 5px 2px 5px; /*1st Val Top,Right,Bottom,Left */
+    border-radius: 10px;
+}
+.moneySpread{
+    border-radius: 16px;
+    height: 32px;
+    cursor: pointer;
+}
